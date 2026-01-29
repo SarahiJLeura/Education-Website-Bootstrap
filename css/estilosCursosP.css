@@ -1,0 +1,40 @@
+:root{
+      --fondo:#f6f8fb;
+      --cardFondo:#ffffff;
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --radio:12px;
+    }
+
+    body{ background:var(--fondo); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; padding-bottom:84px; }
+
+    .contenedor{ max-width:1100px; margin:18px auto; padding:0 16px; }
+
+    /* header */
+    .encabezado{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px; }
+    .encabezado .saludo small{ color:var(--muted); display:block; font-size:.85rem; }
+    .encabezado .saludo h5{ margin:0; font-weight:700; }
+
+    .buscadorWrapper{ width:100%; margin-bottom:18px; }
+    .buscador{ border-radius:10px; padding:10px 14px; border:1px solid #e9eef8; background:#fff; }
+
+    /* sección cursos */
+    .seccionTitulo{ display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+    .seccionTitulo h6{ margin:0; font-weight:700; color:#111827; }
+    .verTodos{ color:var(--accent); font-weight:600; font-size:.9rem; text-decoration:none; }
+
+    .tarjetaCurso{ background:var(--cardFondo); border-radius:12px; padding:14px; box-shadow:0 6px 18px rgba(16,24,40,0.04); border:1px solid rgba(15,23,42,0.03); }
+    .tituloCurso{ font-weight:700; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:520px; }
+    .metaCurso{ color:var(--muted); font-size:.85rem; }
+
+    .avatarsGrupo{ display:flex; gap:-8px; align-items:center; margin-top:6px; }
+    .avatarPeq{ width:28px; height:28px; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 1px rgba(16,24,40,0.04); }
+
+    .menuInferior a{ color:var(--muted); text-decoration:none; font-size:.85rem; display:flex; gap:6px; align-items:center; flex-direction:column; padding:6px 8px; }
+    .menuInferior a.activo{ color:var(--accent); font-weight:600; }
+
+    /* responsive tweaks */
+    @media (max-width:575px){
+      .tituloCurso{ max-width:200px; }
+      .imagenCurso{ width:56px; height:56px; }
+    }
